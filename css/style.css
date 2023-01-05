@@ -51,8 +51,10 @@
 
 .main__sections {
   background-image: url(../img/dove.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   padding: 110px 8%;
   display: grid;
   grid-template: repeat(4, auto) / 70% 30%;
