@@ -138,6 +138,7 @@
   background-size: cover;
   margin-bottom: 10px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .book__text {
@@ -147,6 +148,7 @@
   padding: 3px 2px;
   color: var(--white);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .width__space {
