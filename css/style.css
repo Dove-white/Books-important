@@ -138,9 +138,6 @@
   background-size: cover;
   margin-bottom: 10px;
   border-radius: 3px;
-}
-
-.book:hover {
   cursor: pointer;
 }
 
