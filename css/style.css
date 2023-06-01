@@ -154,6 +154,19 @@
   cursor: pointer;
 }
 
+@media (max-width: 480px) {
+
+  .book__contain1 {
+    grid-template-columns: 
+    repeat(auto-fit,minmax(min(160px,100%),1fr));
+  }
+
+  .book {
+    width: 100px;
+  }
+
+}
+
 .book__text {
   background-color: var(--brown);
   width: max-content;
