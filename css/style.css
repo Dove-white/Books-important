@@ -10,12 +10,12 @@
 }
 
 .nav__container {
+  --blue: #7ba1c0a5;
   display: flex;
   background-color: var(--blue);
   padding: 10px 8%;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   position: fixed;
   width: 100%;
 }
@@ -23,9 +23,18 @@
 .list__content {
   list-style-type: none;
   display: flex;
-  gap: 40px;
-  padding: 0;
+  justify-content: center;
+  width: 130%;
+  gap: 5%;
+  padding-inline-start: 0;
 }
+
+@media (max-width: 680px) {
+  .list__content {
+    display: none;
+  }
+}
+
 
 .list,
 .btn {
@@ -50,19 +59,29 @@
 /* _____________main-sections_________________ */
 
 .main__sections {
-  background-image: url(../img/dove.jpg);
+  background-image: url(../img/Wisdom-Book-Project.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   padding: 110px 8%;
   display: grid;
-  grid-template: repeat(4, auto) / 70% 30%;
+  grid-template: repeat(3, auto) / 70% 30%;
   grid-template-areas:
     "item1 item5"
     "item2 item5"
-    "item3 item5"
-    "item4 item5";
+    "item3 item5";
+}
+
+@media (max-width: 840px) {
+  .main__sections {
+    grid-template: repeat(4, auto) / 100% 0;
+    grid-template-areas:
+    "item1 item1"
+    "item2 item2"
+    "item3 item3"
+    "item5 item5";
+  }
 }
 
 .heading__contents {
@@ -105,9 +124,9 @@
 
 .book__contain1 {
   grid-area: item3;
-  display: flex;
-  gap: 40px;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit,minmax(min(200px,100%),1fr));
 }
 
 .book__contents {
@@ -121,13 +140,6 @@
   -moz-box-shadow: 0px 0px 5px 1px rgba(215, 216, 211, 0.66);
 }
 
-.book__contain2 {
-  grid-area: item4;
-  display: flex;
-  gap: 40px;
-  margin-top: 25px;
-}
-
 .book__contain3 {
   grid-area: item5;
 }
@@ -136,7 +148,7 @@
   width: 140px;
   height: 160px;
   background-size: cover;
-  margin-bottom: 10px;
+  margin: 20px 0 10px 0;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -217,6 +229,16 @@
 }
 
 /* _______________form____________________ */
+
+.container3__book__container {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 840px) {
+  .container3__book__container {
+    margin-top: 100px;
+  }
+}
 
 .container3__book1 {
   position: relative;
