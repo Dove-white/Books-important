@@ -75,6 +75,7 @@
 
 @media (max-width: 840px) {
   .main__sections {
+    padding-right: 0;
     grid-template: repeat(4, auto) / 100% 0;
     grid-template-areas:
     "item1 item1"
