@@ -132,7 +132,7 @@
 
 .book__contents {
   position: absolute;
-  background-size: contain;
+  /* background-size: contain; */
   width: 40%;
   height: 35px;
   border-radius: 4px;
@@ -149,7 +149,8 @@
   width: 140px;
   height: 160px;
   background-size: cover;
-  margin: 20px 0 10px 0;
+  background-position: center center;
+  margin: 20px 0 -10px 0;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -168,13 +169,16 @@
 }
 
 .book__text {
-  background-color: var(--brown);
+  /* background-color: var(--brown); */
   width: max-content;
   border-radius: 3px;
   padding: 3px 2px;
-  color: var(--white);
+  /* color: var(--white); */
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 0px 0px 5px 1px rgba(215, 216, 211, 0.66);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(215, 216, 211, 0.66);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(215, 216, 211, 0.66);
 }
 
 .width__space {
@@ -186,30 +190,26 @@
 } */
 
 .book1__container {
-  background-image: url(../img/good_inscription.png);
+  background-image: url(../img/dove-book.png);
   position: relative;
 }
 
 .book1__content1 {
-  background-color: var(--blue);
   top: 7px;
   right: -20px;
 }
 
 .book1__content2 {
-  background-color: var(--brown);
   top: 40px;
   right: -25px;
 }
 
 .book1__content3 {
-  background-color: var(--blue);
   top: 87px;
   right: -20px;
 }
 
 .book1__content4 {
-  background-color: var(--brown);
   top: 119px;
   right: -25px;
 }
@@ -219,7 +219,7 @@
 } */
 
 .book2__container {
-  background-image: url(../img/giter.jpg);
+  background-image: url(../img/dove-book.png);
 }
 
 /* .container1__book3 {
@@ -227,19 +227,19 @@
 } */
 
 .book3__container {
-  background-image: url(../img/spaces.jpg);
+  background-image: url(../img/dove-book.png);
 }
 
 .book4__container {
-  background-image: url(../img/car.jpg);
+  background-image: url(../img/dove-book.png);
 }
 
 .book5__container {
-  background-image: url(../img/city.jpg);
+  background-image: url(../img/dove-book.png);
 }
 
 .book6__container {
-  background-image: url(../img/small-city.jpg);
+  background-image: url(../img/dove-book.png);
 }
 
 /* _______________form____________________ */
@@ -256,11 +256,11 @@
 
 .container3__book1 {
   position: relative;
-  background-image: url(../img/flower2.jpg);
+  background-image: url(../img/dove-book.png);
 }
 
 .container3__book2 {
-  background-image: url(../img/flower.jpg);
+  background-image: url(../img/dove-book.png);
   position: absolute;
   transform: rotateZ(100deg);
 }
