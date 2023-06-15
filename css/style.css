@@ -178,7 +178,7 @@
 }
 
 @media (min-width: 679.9px) {
-  .bar__logo {
+  .bar-logo-container {
     display: none;
   }
 }
