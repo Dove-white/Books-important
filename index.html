@@ -5,13 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/cae01f65b9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/cae01f65b9.js"
+      crossorigin="anonymous"
+    ></script>
     <title>WEB DESIGN PROJECT ONE</title>
   </head>
   <body>
     <header>
+      <div id="myNav" class="nav-for-phone">
+        <ul class="nav-for-phone-content">
+          <li class="list">
+            <a href="https://dove-white.github.io/Books-important/" class="link"
+              >about</a
+            >
+          </li>
+          <li class="list">
+            <a href="https://dove-white.github.io/Books-important/" class="link"
+              >look inside</a
+            >
+          </li>
+          <li class="list">
+            <a href="https://dove-white.github.io/Books-important/" class="link"
+              >display code</a
+            >
+          </li>
+          <li class="list">
+            <a href="https://dove-white.github.io/Books-important/" class="link"
+              >video</a
+            >
+          </li>
+          <li class="list">
+            <a href="https://dove-white.github.io/Books-important/" class="link"
+              >work shops</a
+            >
+          </li>
+        </ul>
+      </div>
       <nav class="nav__container">
-        <div class="bar__logo"><i class="fa-solid fa-bars bar-icon"></i></div>
+        <div
+          class="bar-logo-container"
+          onclick="toTransform(this);openCloseNav()"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <div class="bar4">
+            <div class="bar4-in">
+              <div class="bar1 in-4"></div>
+              <div class="bar2 in-4"></div>
+              <div class="bar3 in-4"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="bar__logo"><i class="fa-solid fa-bars bar-icon" onclick="openCloseNav()"></i></div> -->
         <div class="nav__list">
           <ul class="list__content">
             <li class="list"><a href="#" class="link">about</a></li>
@@ -42,14 +89,12 @@
       <section class="book__contain1">
         <article class="container1__book1 width__space">
           <div class="book book1__container">
-            <div class="book1__content1  book__contents"></div>
-            <div class="book1__content2  book__contents"></div>
+            <div class="book1__content1 book__contents"></div>
+            <div class="book1__content2 book__contents"></div>
             <!-- <div class="book1__content3  book__contents"></div> -->
             <!-- <div class="book1__content4  book__contents"></div> -->
           </div>
-          <p class="book__text book1__text1">
-            Book1, not yet in.
-          </p>
+          <p class="book__text book1__text1">Book1, not yet in.</p>
         </article>
         <article class="container1__book2 width__space">
           <div class="book book2__container"></div>
@@ -92,5 +137,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="index.js"></script>
   </body>
 </html>
