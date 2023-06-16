@@ -14,3 +14,17 @@ function openCloseNav() {
 function toTransform(x) {
   x.classList.toggle("change");
 }
+
+let typed = new Typed('.my-names', {
+    strings: [
+      'Redeemer',
+      'Dugbazah',
+      'Dove-White',
+    ],
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+    cursorChar: '.',
+  });
