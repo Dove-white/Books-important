@@ -3,10 +3,10 @@ let myList = false;
 
 function openCloseNav() {
   if (myList == false) {
-    myNav.style.width = "100%";
+    myNav.style.height = "100%";
     myList = true;
   } else if (myList == true) {
-    myNav.style.width = "0%";
+    myNav.style.height = "0%";
     myList = false;
   }
 }

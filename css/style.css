@@ -25,11 +25,11 @@
 }
 
 .nav-for-phone {
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
-  top: 46.6px;
+  top: 0;
   left: 0;
   background: var(--brown);
   background: linear-gradient(
@@ -39,7 +39,7 @@
     rgb(215, 216, 211) 71%,
     rgb(123, 161, 192) 100%
   );
-  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
 }
 
@@ -93,7 +93,8 @@
   border-radius: 50%;
   top: 3.5px;
   left: 3.5px;
-  background: rgba(184, 157, 152, 1) 18%;
+  background: rgb(133,59,54);
+background: linear-gradient(90deg, rgba(133,59,54,1) 46%, rgba(184,157,152,1) 85%);
 }
 
 .change .bar1 {
@@ -163,6 +164,10 @@
     color: var(--white);
   }
 
+  .nav-for-phone-content {
+    padding-inline-start: 0;
+  }
+
   .list,
   .link {
     font-size: 22px;
@@ -174,6 +179,19 @@
   .link {
     width: 100%;
     padding: 0 10%;
+  }
+
+  .nav-for-phone .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  background: var(--brown);
+  background: var(--gradient-brown);
+  transform: scaleX(1);
   }
 }
 
