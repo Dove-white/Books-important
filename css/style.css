@@ -24,7 +24,7 @@
   --box-shadow: 0px 0px 5px 1px rgba(215, 216, 211, 0.66);
 }
 
-.nav-for-phone {
+.nav-for-phone,.book-function {
   height: 0;
   width: 100%;
   position: fixed;
@@ -42,6 +42,75 @@
   overflow-y: hidden;
   transition: 0.5s;
 }
+
+/* ________________For-book-functions__________ */
+
+.book-function-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0 81px;
+}
+
+.bar5-1,.bar5-3 {
+  width: 21px;
+  height: 2.5px;
+  background-color: var(--brown);
+  margin: 5.5px 0;
+  transition: 0.4s;
+  border-radius: 17.9%;
+}
+
+.bar5-1 {
+  transform: translate(0, -5px) rotate(-45deg);
+}
+
+.bar5-3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.book-function-heading {
+  margin: 40px 0;
+  font-size: 1.3rem;
+}
+
+.book-function-form-input {
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
+  outline: none;
+  border: none;
+}
+
+.book-function-form-button {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--brown);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.book-function-output {
+  margin-top: 40px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: xx-large;
+}
+
+/* ________________For-book-functions__________ */
 
 .nav-for-phone-content {
   position: relative;
@@ -357,6 +426,7 @@ background: linear-gradient(90deg, rgba(133,59,54,1) 46%, rgba(184,157,152,1) 85
   width: max-content;
   border-radius: 3px;
   padding: 3px 2px;
+  align-self: center;
   /* color: var(--white); */
   font-weight: 600;
   cursor: pointer;
@@ -388,6 +458,8 @@ background: linear-gradient(90deg, rgba(133,59,54,1) 46%, rgba(184,157,152,1) 85
 
 .width__space {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .container1__book1 {

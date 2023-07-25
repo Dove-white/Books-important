@@ -77,7 +77,7 @@
         <div class="heading__contents">
           <h1 class="main__heading1">dove-white</h1>
           <h2 class="main__heading2">
-            web <samp class="main__heading2__design">design</samp>
+            web<br> <samp class="main__heading2__design site-title"></samp>
           </h2>
           <h3 class="main__heading3">by <b class="my-names"></b></h3>
         </div>
@@ -88,16 +88,42 @@
       <section class="book__contain1">
         <article class="container1__book1 width__space">
           <div class="book book1__container">
-            <div class="book1__content1 book__contents"></div>
-            <div class="book1__content2 book__contents"></div>
+            <!-- <div class="book1__content1 book__contents"></div> -->
+            <!-- <div class="book1__content2 book__contents"></div> -->
             <!-- <div class="book1__content3  book__contents"></div> -->
             <!-- <div class="book1__content4  book__contents"></div> -->
           </div>
-          <p class="book__text book1__text1">Book1, not yet in.</p>
+          <article id="function-remove-vowels" class="book-function">
+            <figure class="book-function-form">
+                <div class="bar5" onclick="openCloseBookFun(this)">
+                  <div class="bar5-1"></div>
+                  <div class="bar5-3"></div>
+                </div>
+              <h1 class="book-function-heading">Remove The Vowels</h1>
+              <p>This function will remove the vowels in the input</p>
+              <input class="book-function-form-input" type="text" placeholder="enter" id="input-sent-remove-vowels">
+              <input class="book-function-form-button" type="button" id="btn-remove-vowels" value="Remove">
+              <div class="book-function-output" id="output-js"></div>
+          </figure>
+          </article>
+          <p class="book__text book1__text1" onclick="openCloseBookFun()">Remove Vowels</p>
         </article>
         <article class="container1__book2 width__space">
           <div class="book book2__container"></div>
-          <p class="book__text book2__text2">Book2, not yet in.</p>
+          <article id="function-find-average" class="book-function">
+            <figure class="book-function-form">
+                <div class="bar5" onclick="openCloseBookFunFindA(this)">
+                  <div class="bar5-1"></div>
+                  <div class="bar5-3"></div>
+                </div>
+              <h1 class="book-function-heading">Find The Average</h1>
+              <p>This function will find the average of the numbers. Please, separate the numbers with a comma (,).</p>
+              <input class="book-function-form-input" type="text" placeholder="enter" id="input-sent-find-average">
+              <input class="book-function-form-button" type="submit" id="btn-find-average" value="Find">
+              <div class="book-function-output" id="output-js-find-average"></div>
+          </figure>
+          </article>
+          <p class="book__text book2__text2" onclick="openCloseBookFunFindA()">Find Average</p>
         </article>
         <article class="container1__book3 width__space">
           <div class="book book3__container"></div>
@@ -135,8 +161,11 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="index.js"></script>
+    <script src="remove-vowels.js"></script>
+    <script src="find-average.js"></script>
   </body>
 </html>

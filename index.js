@@ -17,14 +17,27 @@ function toTransform(x) {
 
 let typed = new Typed('.my-names', {
     strings: [
-      'Redeemer',
       'Dugbazah',
-      'Dove-White',
+      'Redeemer',
     ],
     typeSpeed: 100,
     backSpeed: 80,
     backDelay: 1500,
-    loop: true,
+    loop: false,
     showCursor: true,
-    cursorChar: '.',
+    cursorChar: '|',
+  });
+
+  let typed2 = new Typed('.site-title', {
+    strings: [
+      'DESIGN',
+      'JS',
+      'FUNCTIONS',
+    ],
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1500,
+    loop: false,
+    showCursor: true,
+    cursorChar: '|',
   });
